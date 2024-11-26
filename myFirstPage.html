@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Webpage</title>
+    <!-- Link to external CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Header -->
+<header>
+    <h1>Baiturina Dariga</h1>
+    <p>This is a basic webpage created with HTML, CSS, and JavaScript.</p>
+</header>
+
+<!-- Navigation -->
+<nav>
+    <ul>
+        <li><a href="#section1">About</a></li>
+        <li><a href="#section2">Gallery</a></li>
+        <li><a href="#section3">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Main Content -->
+<main>
+    <!-- Web Development Basics Section -->
+    <section id="section1">
+        <h2>Web Development Basics</h2>
+        <p>Web development is the process of creating websites and applications for the internet.</p>
+        <p>Some of the essential tools in web development include HTML, CSS, JavaScript!</p>
+
+        <!-- Aside Element: Did you know? -->
+        <aside>
+            <h3>Did You Know?</h3>
+            <p>HTML5 introduced important new features such as <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;video&gt;</code> elements for better structuring and multimedia handling.</p>
+        </aside>
+    </section>
+
+
+
+    <!-- Gallery Section -->
+    <section id="section2">
+        <h2>Gallery</h2>
+        <img src="img.png" alt="Example image" />
+        <p>Hover over the image for a zoom effect!</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="section3" style="display: flex; align-items: center; justify-content: center;">
+        <div style="flex: 1; padding-right: 20px;">
+            <h2>Contact Form</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+            <p id="error-message" style="color: red; display: none;">Please fill out all fields correctly.</p>
+        </div>
+        <!-- YouTube Video Section -->
+        <div style="flex: 1;">
+            <h2>Our Intro Video</h2>
+            <!-- Embed YouTube Video -->
+            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/x4JNfW3y0h0"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 My First Webpage. All Rights Reserved.</p>
+    <p>Follow us on <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
+</footer>
+
+<!-- JavaScript -->
+<script src="javascript.js"></script>
+</body>
+</html>
